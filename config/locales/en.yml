@@ -1,7 +1,8 @@
 en:
   layouts:
     header:
-      edit_profile: "Edit profile"
+      profile: "Profile"
+      edit: "Edit"
       login: "Login"
       logout: "Logout"
   logo_header: "Music Listening"

@@ -81,7 +81,7 @@ en:
         password_confirmation: "Password confirmation"
         current_password: "Current password"
         leave_blank: "(leave blank if you don't want to change it)"
-        edit: "Edit %{resource_name}"
+        edit: "Profile edit"
         waiting: "Currently waiting confirmation for: %{unconfirmed_email}"
         characters_minimum: "(%{length} characters minimum)"
         need_confirm: "(we need your current password to confirm your changes)"
@@ -104,13 +104,15 @@ en:
         email: "Email"
         password: "Password"
         log_in: "Log in"
+        remember_me: "Remember me"
+        sign_up: "Sign up"
     shared:
       links:
         log_in: "Log in"
         sign_up: "Sign up"
-        forgot_password: "Forgot your password?"
-        confirmations: "Didn't receive confirmation instructions?"
-        unlocks: "Didn't receive unlock instructions?"
+        forgot_password: "Reset your password"
+        confirmations: "Resend confirmation"
+        unlocks: "Resend unlock instruction"
         sign_in_with: "Sign in with %{provider}"
     unlocks:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."

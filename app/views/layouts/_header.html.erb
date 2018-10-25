@@ -1,13 +1,17 @@
-<nav>
-  <div class="nav-wrapper">
-    <%= link_to t("logo_header"), root_path, class: "brand-logo" %>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <% if user_signed_in? %>
-        <li><%= link_to t(".edit_profile"), edit_user_registration_path %></li>
-        <li><%= link_to t(".logout"), destroy_user_session_path, method: :delete %></li>
-      <% else %>
-        <li><%= link_to t(".login"), new_user_session_path %></li>
-      <% end %>
-    </ul>
+<div class="ui menu">
+  <%= link_to t("logo_header"), root_path, class: "header item" %>
+  <div class="right menu">
+    <% if user_signed_in? %>
+      <div class="ui dropdown item">
+        <%= t ".profile", class: "text" %>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <%= link_to t(".edit"), edit_user_registration_path, class: "item" %>
+        </div>
+      </div>
+      <%= link_to t(".logout"), destroy_user_session_path, method: :delete, class: "item" %>
+    <% else %>
+      <%= link_to t(".login"), new_user_session_path, class: "item" %>
+    <% end %>
   </div>
-</nav>
+</div>
